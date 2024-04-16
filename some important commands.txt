@@ -1,0 +1,57 @@
+TO CHECK EPS STATUS
+-------------------
+grep -i "18 February 2024" /lib/Seqrite/Seqrite/reports/*.log -R
+
+
+DOWNLOAD FILE FROM REMOTE SERVER
+--------------------------------
+su
+[give password]
+cd /
+mkdir script
+cd script
+wget ftp://share:Passw0rd@192.168.201.8/IT/Linux_Mint_Install/Video_bkp.sh
+ls
+chmod +x video_bkp.sh
+./video_bkp.sh
+
+[9:17 pm, 26/02/2024] Shibajit Da IT Mpokket: Issue: Clicking on the Software Manager does nothing.
+
+sudo apt update
+sudo apt install --reinstall mintinstall
+
+Issue: No WiFi networks are detected or you cannot connect to them.
+
+sudo apt update && sudo apt upgrade
+
+Reinstall the network manager:   
+sudo apt-get install --reinstall network-manager
+
+Issue: An error mentions broken packages.
+
+sudo apt update
+sudo apt install -f
+
+Issue: Everything looks fine, but there’s no sound.
+
+rm -r ~/.config/pulse; pulseaudio -k
+[9:18 pm, 26/02/2024] Shibajit Da IT Mpokket: Issue: Display settings are misconfigured, causing issues like resolution problems or multiple monitors not working correctly.
+
+rm ~/.config/monitors.xml
+[9:18 pm, 26/02/2024] Shibajit Da IT Mpokket: You want to check basic system information.
+
+uname -a
+
+REMOVE ssh KEY
+-----------------
+ssh-keygen -R [hostname]
+example:ssh-keygen -R MVPL-6th-GS-Desk-346
+
+ssh-keygen -f "/home/mpokket/.ssh/known_hosts" -R "mvpl-6th-gs-desk-022.local"
+
+all currently active units (services) on your system:
+-----------------------------------------------------
+systemctl list-units --type=service
+
+
+

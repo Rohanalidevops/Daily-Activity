@@ -1,0 +1,12 @@
+REMOTE MACHINE CONNECT COMMAND
+-------------------------------
+ssh mpokket@MVPL-8th-PS-Desk-346
+ssh mpokket@MVPL-6th-GS-Desk-346
+ssh mpokket@MVPL-12th-PS-Desk-346
+
+Please  find the issue status mentioned below
+
+
+desk 60 need to experiment
+
+ssh-keygen -f "/home/mpokket/.ssh/known_hosts" -R "mvpl-6th-gs-desk-084.local"

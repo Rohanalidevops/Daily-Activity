@@ -1,0 +1,5 @@
+ 192.168.210.50 --Genesys call server ip
+ 192.168.210.57 --Genesys call server ip
+
+192.168.210.65
+Application server ip
