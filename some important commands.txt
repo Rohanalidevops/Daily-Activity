@@ -54,4 +54,38 @@ all currently active units (services) on your system:
 systemctl list-units --type=service
 
 
+Run setup.exe with Wine:
+wine setup.exe
 
+To check the port
+------------------
+ss -tp
+
+To Download ip folder 
+-------------------------
+wget -r ftp://share:Passw0rd@192.168.0.8/IT/Linux_Mint_Install/ip && mv IT/Linux_Mint_Install/ip /home/mpokket/Desktop/
+
+mv IT/Linux_Mint_Install/ip /home/mpokket/Desktop/
+ wget -r ftp://share:Passw0rd@192.168.0.8/IT/Linux_Mint_Install/ip && mv 192.168.0.8/IT/Linux_Mint_Install/ip /home/mpokket/Desktop/
+
+print distribution-specific information
+-------------------------------------------
+ lsb_release -a
+
+ Automatically Update EPS
+ ---------------------------
+ 
+systemctl restart quickupdate
+
+
+TO delete all png file in a directory
+----------------------------------------
+
+rm /path/to/directory/*.png
+
+rm /home/mpokket/*png
+
+Change root password
+---------------------------
+
+sudo passwd root
