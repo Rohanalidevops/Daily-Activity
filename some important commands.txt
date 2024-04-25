@@ -89,3 +89,11 @@ Change root password
 ---------------------------
 
 sudo passwd root
+
+
+Google start from Powershell
+-----------------------------
+
+PS C:\Users\SK. Rohan Ali> Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe"
+Start-Process "chrome.exe"
+Start-Process "chrome.exe" "https://www.example.com"
