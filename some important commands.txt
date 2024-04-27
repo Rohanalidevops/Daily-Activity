@@ -97,3 +97,28 @@ Google start from Powershell
 PS C:\Users\SK. Rohan Ali> Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe"
 Start-Process "chrome.exe"
 Start-Process "chrome.exe" "https://www.example.com"
+
+
+
+GIT Operations
+------------------
+git add .
+git commit -m "Your message"
+git push origin main
+git init
+
+
+ping ntp.ubuntu.com
+
+To open Task Manager directly from the keyboard, you can use the following shortcut:
+
+Press Ctrl + Shift + Esc
+
+Insatall APache web SERVER
+-----------------------------
+
+
+start Network  Manager
+-----------------------
+sudo systemctl restart NetworkManager
+
