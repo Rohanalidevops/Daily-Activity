@@ -116,6 +116,7 @@ Press Ctrl + Shift + Esc
 
 Insatall APache web SERVER
 -----------------------------
+sudo apt update
 
 
 start Network  Manager
