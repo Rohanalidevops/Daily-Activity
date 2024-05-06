@@ -12,3 +12,6 @@ fi
 Run as crontab
 ------------------
 00 18 * * *  /script/Delete.sh;./Delete.sh
+
+
+find /home/mpokket/Videos/ -type f -name '*.mkv' ! -newermt "$(date -d 'yesterday 00:00' +%Y-%m-%d\ %H:%M)" -exec rm {} +
