@@ -123,3 +123,23 @@ start Network  Manager
 -----------------------
 sudo systemctl restart NetworkManager
 
+System Serial Number
+-----------------------
+cat /sys/class/dmi/id/product_serial
+
+sudo dmidecode -s system-serial-number
+
+CPU Model
+---------
+sudo dmidecode -s system-serial-number
+
+open vmworkstation through powershell
+--------------------------------------
+Start-Process "C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe"
+
+new COMMAND: misconfig
+
+
+
+
+
