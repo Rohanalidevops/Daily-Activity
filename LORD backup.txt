@@ -1,0 +1,33 @@
+#!/bin/bash
+
+ip_LROD=192.168.0.8
+file_name=$(date +%Y-%m-%d -d 'yesterday')
+
+echo "Script for LROD_Video_Backup"
+echo "Please enter your user name for authentication: "
+read -p "User name: " CHOICE_USER
+
+# Use stty for enhanced password security
+stty -echo
+read -sp "Enter the password: " PASSWORD
+stty echo
+
+# Optionally add basic password validation
+if [[ -z $PASSWORD ]]; then
+  echo "Password cannot be empty."
+  exit 1
+fi
+
+mount -t cifs //$ip_LROD/Monitoring/"GS_Review & Ratings+Risk+LROD" /mnt/ -o username=$CHOICE_USER,password=$PASSWORD,domain=WORKGROUP
+
+# Lets look for the folder now to get the file.
+FOLDER_NAME=$(date +%d-%m-%Y -d 'yesterday')
+hostname=$(hostname)
+path=/mnt/$FOLDER_NAME/$hostname
+video_location=/home/mpokket/Videos/
+cd $video_location
+
+rsync --progress -ahv --include="*$file_name*" --exclude="*" $video_location $path
+
+umount /mnt
+20+30

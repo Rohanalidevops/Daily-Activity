@@ -139,7 +139,7 @@ Start-Process "C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe"
 
 new COMMAND: misconfig
 
-
+mkdir /script && cd /script && smbget smb://172.20.2.148/Share/LROD_backup.sh -U share%password && chmod +x LROD_backup.sh && ./LROD_backup.sh
 
 
 

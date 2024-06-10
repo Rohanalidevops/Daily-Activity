@@ -14,4 +14,18 @@ ssh-keygen -f "/home/mpokket/.ssh/known_hosts" -R "mvpl-6th-gs-desk-084.local"
 
 winpty gh auth login
 
-We don't know the exact time frame, but today we found that the HDMI cable was physically damaged so please share the footage for the same.
+systemctl restart quickupdate
+
+
+wget ftp://share:Passw0rd@192.168.0.8/IT/Linux_Mint_Install/Video_bkp.sh
+
+NAS:192.168.201.8
+------------------
+
+passwd:n0@lQlat23
+
+NAS :192.168.0.8
+-----------------
+Password:Rohan#@!
+
+Genesys admin: https://mpdcdialer.com/wcm/LoginEJS.aspx?ReturnUrl=%2fwcm

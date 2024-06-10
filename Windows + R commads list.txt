@@ -1,0 +1,28 @@
+taskmgr --- open task manager
+mstsc -- Remote desktop connection
+cmd -- command prompt
+ncpa.cpl -- network Propertiescontrol
+control -- control panel
+osk -- onscreen keyboard
+appwiz.cpl-- uninstall any program
+firewall.cpl-- windows firewall
+charmap ---caracter map
+computerdefaults-- to seefa default apps
+temp --temp folder
+chrome-- google chrome
+diskmgmt.msc --disk management
+msconfig-- system configuration
+psr--windows step recoder
+winver---to know the version of OS
+timedate.cpl --time format setting
+
+------------------------------------------
+		WINDOWS 11
+------------------------------------------
+
+
+
+
+
+
+

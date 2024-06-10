@@ -1,0 +1,12 @@
+you can check using your shell type
+-----------------------------------
+echo $0
+
+To check OS version
+----------------------
+cat /etc/os-release
+
+To Check Avialble shells list
+-------------------------------
+cat /etc/shells
+
