@@ -1,0 +1,74 @@
+#!/bin/bash
+
+ip_PS=192.168.0.8
+ip_GS=192.168.201.8
+file_name=$(date +%Y-%m-%d -d '2 days ago')
+
+echo "Please select an option for the Video Backup you are taking:"
+echo "1. HVOD-Video"
+echo "2. EMAIL-Video"
+read -p "Enter your choice (1-2): " CHOICE1
+
+case $CHOICE1 in
+    1)
+        CHOICE_Video="HVOD-Video"
+        CHOICE_Mount="Monitoring/2024"
+        IP_ADDRESS="$ip_GS"
+        ;;
+    2)
+        CHOICE_Video="EMAIL-Video"
+        CHOICE_Mount="Monitoring"
+        IP_ADDRESS="$ip_PS"
+        ;;
+    *)
+        echo "Invalid choice. Please enter a number between 1 and 2."
+        exit 1
+        ;;
+esac
+
+read -p "Please enter your user name for authentication: " CHOICE_USER
+
+# Use stty for enhanced password security
+stty -echo
+read -sp "Enter the password: " PASSWORD
+stty echo
+echo
+
+# Optionally add basic password validation
+if [[ -z $PASSWORD ]]; then
+  echo "Password cannot be empty."
+  exit 1
+fi
+
+echo "Mounting the network share..."
+if ! mount -t cifs //$IP_ADDRESS/$CHOICE_Mount /mnt/ -o username=$CHOICE_USER,password=$PASSWORD,domain=WORKGROUP; then
+    echo "Failed to mount network share. Please check your credentials and network connection."
+    exit 1
+fi
+
+# Define the date for the day before yesterday
+FOLDER_NAME=$(date +%d-%m-%Y -d '2 days ago')
+hostname=$(hostname)
+path=/mnt/$FOLDER_NAME/$hostname
+video_location=/home/mpokket/Videos/
+
+if [[ ! -d $path ]]; then
+    echo "Destination path $path does not exist. Creating it now..."
+    mkdir -p $path
+fi
+
+echo "Copying files for date $file_name..."
+cd $video_location
+if ! rsync --progress -ahv --include="*$file_name*" --exclude="*" $video_location $path; then
+    echo "File copy for date $file_name failed."
+    umount /mnt
+    exit 1
+fi
+
+echo "Unmounting the network share..."
+if ! umount /mnt; then
+    echo "Failed to unmount network share. Please check if it's still in use."
+    exit 1
+fi
+
+echo "Backup completed successfully."

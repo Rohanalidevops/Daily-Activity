@@ -29,3 +29,9 @@ NAS :192.168.0.8
 Password:Rohan#@!
 
 Genesys admin: https://mpdcdialer.com/wcm/LoginEJS.aspx?ReturnUrl=%2fwcm
+
+observium id
+-----------------
+192.168.0.72
+itsupport
+hahahoho

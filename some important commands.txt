@@ -141,5 +141,48 @@ new COMMAND: misconfig
 
 mkdir /script && cd /script && smbget smb://172.20.2.148/Share/LROD_backup.sh -U share%password && chmod +x LROD_backup.sh && ./LROD_backup.sh
 
+TO Delete command Seqrite
+---------------------------
+/usr/lib/Seqrite/Seqrite/qhuninstall
+
+sudo lshw | grep serial
+
+
+Ping IP and store data in a text file (Windows)
+-----------------------------------------------
+ping www.google.com -t >c:\pingsavefile.txt
+
+
+to save ping reports
+-----------------------
+
+ ping 8.8.8.8 >Desktop/ping.txt
+
+ ping 8.8.8.8 | ts '[%Y-%m-%d %H:%M:%S]' > Desktop/ping.txt (with time stamp)
+
+Ameyo call SERVER IP
+--------------------
+
+192.168.0.9
+
+
+To check any desk install or not
+---------------------------------
+dpkg -l | grep anydesk
+
+ps aux | grep anydesk
+
+ls /usr/bin/anydesk
+
+which anydesk
+
+whereis anydesk
+
+
+
+
+
+
+
 
 
