@@ -35,3 +35,10 @@ observium id
 192.168.0.72
 itsupport
 hahahoho
+
+
+Sequrite
+----------------
+
+Linux :- client123
+Windows  :- mPokket@#1234
