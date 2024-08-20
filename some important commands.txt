@@ -192,6 +192,10 @@ http://192.168.0.72/
 http://192.168.201.72/
 
 
+TO konw Default gateway
+------------------------
+ip route
+
 
 
 
