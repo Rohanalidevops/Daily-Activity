@@ -196,6 +196,12 @@ TO konw Default gateway
 ------------------------
 ip route
 
+#To get system model
+Menu>Administration>System Reports
+
+#To get serial no. of lenovo system
+
+sudo dmidecode -s system-serial-number
 
 
 
