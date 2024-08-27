@@ -15,6 +15,7 @@ msconfig-- system configuration
 psr--windows step recoder
 winver---to know the version of OS
 timedate.cpl --time format setting
+eventvwr.msc--Event Log of windows
 
 ------------------------------------------
 		WINDOWS 11
