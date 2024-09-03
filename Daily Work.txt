@@ -42,3 +42,6 @@ Sequrite
 
 Linux :- client123
 Windows  :- mPokket@#1234
+ Linux Commands
+-----------------
+https://www.howtogeek.com/linux-commands-that-help-with-troubleshooting/
