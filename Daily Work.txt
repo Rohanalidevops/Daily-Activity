@@ -45,3 +45,12 @@ Windows  :- mPokket@#1234
  Linux Commands
 -----------------
 https://www.howtogeek.com/linux-commands-that-help-with-troubleshooting/
+
+
+new Ameyo 
+---------------
+
+1	192.168.215.51	newameyo1.mpokket.org
+2	192.168.215.52	newasap1.mpokket.org
+3	192.168.215.54	newcrm1.mpokket.org
+4	192.168.215.56	newrpo1.mpokket.org
