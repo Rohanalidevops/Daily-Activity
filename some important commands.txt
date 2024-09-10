@@ -203,6 +203,7 @@ Menu>Administration>System Reports
 
 sudo dmidecode -s system-serial-number
 
+User Details :- cut -d: -f1 /etc/passwd
 
 
 
