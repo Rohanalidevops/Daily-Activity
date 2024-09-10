@@ -207,6 +207,9 @@ User Details :- cut -d: -f1 /etc/passwd
 
 device name:-nmcli con sh
 trace all packets: tcpdump -i <ehthernet name>
+Use nmap 
+----------
+nmap -sP 192.168.0.1/22
 
 
 
