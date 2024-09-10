@@ -205,6 +205,10 @@ sudo dmidecode -s system-serial-number
 
 User Details :- cut -d: -f1 /etc/passwd
 
+device name:-nmcli con sh
+trace all packets: tcpdump -i <ehthernet name>
+
+
 
 
 
