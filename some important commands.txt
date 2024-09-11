@@ -211,6 +211,16 @@ Use nmap
 ----------
 nmap -sP 192.168.0.1/22
 
+Google singleton lock open
+----------------------------
+
+.config/google-chrome/SingletonLock
+
+
+
+
+
+
 
 
 
