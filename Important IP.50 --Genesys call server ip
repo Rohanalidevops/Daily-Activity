@@ -7,3 +7,7 @@ Application server ip
 CMS Server Globsyn
 ----------------------
 http://192.168.201.98:8080/ssw/index.do?lang=en
+
+Ticket system
+---------------
+http://10.240.48.13/open.php 
