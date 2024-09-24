@@ -216,6 +216,14 @@ Google singleton lock open
 
 .config/google-chrome/SingletonLock
 
+Copy data from one machine to another machine
+--------------------------------------------------
+scp Desktop\Test.txt user@IP_Address:/home/user/Documents
+
+To get windows Product key
+-------------------------------
+wmic path softwareLicensingService get OA3xOriginalProductKey
+
 
 
 
