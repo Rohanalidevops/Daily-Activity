@@ -10,3 +10,21 @@ To Check Avialble shells list
 -------------------------------
 cat /etc/shells
 
+
+Redhat Linux Root password change
+-----------------------------------
+
+restart
+go to second option 
+press (win+e)
+then press (ctrl+e)
+then= rd.break
+
+mount -o remount,rw /sysroot
+chroot /sysroot
+passwd root
+New Password=
+Retype Password=
+touch /.autorelabel
+exit
+exit
