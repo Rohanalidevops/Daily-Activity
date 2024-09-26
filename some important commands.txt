@@ -224,6 +224,8 @@ To get windows Product key
 -------------------------------
 wmic path softwareLicensingService get OA3xOriginalProductKey
 
+https://www.docs.deploypro.dev/blog/using-bash-and-python
+
 
 
 
