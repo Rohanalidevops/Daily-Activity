@@ -60,3 +60,8 @@ new Ameyo
 Hello Azhar,
 
 Would you please elaborate the exact issue that the DCS is facing for faster resolution and issue tracking.
+
+
+To delete the mpokket user
+-------------------------------
+sudo deluser --remove-home mpokket
