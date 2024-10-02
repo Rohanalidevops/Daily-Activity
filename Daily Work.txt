@@ -65,3 +65,7 @@ Would you please elaborate the exact issue that the DCS is facing for faster res
 To delete the mpokket user
 -------------------------------
 sudo deluser --remove-home mpokket
+
+To checke all user
+-------------------
+cat /etc/passwd | grep mpokket
