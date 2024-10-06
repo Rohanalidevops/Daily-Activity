@@ -69,3 +69,9 @@ sudo deluser --remove-home mpokket
 To checke all user
 -------------------
 cat /etc/passwd | grep mpokket
+
+
+
+To update laptop
+-----------------
+C:\Windows\system32>DISM /online /cleanup-image /restorehealth
