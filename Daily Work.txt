@@ -75,3 +75,5 @@ cat /etc/passwd | grep mpokket
 To update laptop
 -----------------
 C:\Windows\system32>DISM /online /cleanup-image /restorehealth
+
+Would you please elaborate the exact issue that the DCS is facing, It will help us for faster resolution and our issue tracking.
