@@ -1,0 +1,7 @@
+Rocky Linux 
+------------------
+
+Version Check:
+cat /etc/os-release
+hostnamectl
+rpm -q rocky-release
