@@ -24,3 +24,22 @@ Start Mysql Server:  systemctl strat mysqld
 Operation: sudo mysql
  mysql> alter user root@localhost identified by 'Admin@123';
 --------------------------------------------------
+
+Apache:
+---------------------------------------------------
+ install Apache (httpd) and various PHP modules on a system that uses the DNF package manager, such as Fedora, Rocky Linux, or CentOS 8/RHEL 8.
+---------------------------------------------------
+
+Installation: sudo dnf install httpd php php-fpm php-mysqlnd php-ldap php-bc2math php-mbstring php-gd php-pdo php-xml
+Check Apache server: systemctl status httpd
+Enable Apache Server:  systemctl enable httpd
+Start Apache Server:  systemctl strat httpd
+----------------------------------------------------
+php-fpm:
+---------
+Check php-fpm: systemctl status php-fpm
+Enable Apache Server:  systemctl enable php-fpm.services
+Start Apache Server:  systemctl strat php-fpm.services
+
+
+
