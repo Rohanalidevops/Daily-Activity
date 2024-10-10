@@ -1,4 +1,4 @@
- List Installed Zabbix Packages:
+List Installed Zabbix Packages:
     sudo yum list installed | grep zabbix
 
 Remove All Zabbix Packages:
@@ -14,3 +14,13 @@ List all installed packages:
   sudo yum list installed
 
 
+Zabbix installation steps:
+----------------------------
+MYSQL:----------------------------------------
+Download Mysql: sudo dnf install mysql-server
+Check Mysql server: systemctl status mysqld
+Enable Mysql Server:  systemctl enable mysqld
+Start Mysql Server:  systemctl strat mysqld
+Operation: sudo mysql
+ mysql> alter user root@localhost identified by 'Admin@123';
+--------------------------------------------------
