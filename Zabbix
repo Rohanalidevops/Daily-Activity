@@ -1,0 +1,16 @@
+ List Installed Zabbix Packages:
+    sudo yum list installed | grep zabbix
+
+Remove All Zabbix Packages:
+  sudo yum remove zabbix*
+
+Clean YUM Cache:
+  sudo yum clean all
+
+Verify Zabbix Package Removal:
+  sudo yum list installed | grep zabbix
+
+List all installed packages:
+  sudo yum list installed
+
+
