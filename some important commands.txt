@@ -226,6 +226,10 @@ wmic path softwareLicensingService get OA3xOriginalProductKey
 
 https://www.docs.deploypro.dev/blog/using-bash-and-python
 
+TO Display all file has start with c and m
+--------------------------------------------
+ls [cm]*
+
 
 
 
