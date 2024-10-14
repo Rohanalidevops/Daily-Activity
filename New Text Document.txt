@@ -1,0 +1,5 @@
+Firefox version control
+---------------------------
+apt-cache show firefox
+apt install firefox=75.0+build3-0ubuntu1
+apt install synaptic
