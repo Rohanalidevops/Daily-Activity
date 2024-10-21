@@ -82,3 +82,9 @@ Would you please elaborate the exact issue that the DCS is facing, It will help 
 Laptop Disk test
 ---------------------
 chkdsk
+
+To checked vokoscreen install or not
+--------------------------------------
+
+dpkg -l | grep vokoscreen
+vokoscreen-ng
