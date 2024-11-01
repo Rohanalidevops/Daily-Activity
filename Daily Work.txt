@@ -91,3 +91,9 @@ vokoscreen-ng
 
 
 fwupdmgr get-upgrades
+
+
+System serial number
+------------------------
+wmic bios get serialnumber
+
