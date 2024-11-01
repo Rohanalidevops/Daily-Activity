@@ -88,3 +88,6 @@ To checked vokoscreen install or not
 
 dpkg -l | grep vokoscreen
 vokoscreen-ng
+
+
+fwupdmgr get-upgrades
