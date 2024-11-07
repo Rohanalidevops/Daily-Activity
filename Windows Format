@@ -1,0 +1,10 @@
+Press shift + F10
+open CMD
+ diskpart
+  list disk
+  select disk0
+   clean
+select disk 1
+clean 
+exit
+exit
