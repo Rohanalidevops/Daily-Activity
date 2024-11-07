@@ -1,0 +1,8 @@
+Check partition
+---------------------
+ fdisk -l
+  lsblk
+  df -h
+  parted -l
+  blkid
+  cat /proc/partitions
