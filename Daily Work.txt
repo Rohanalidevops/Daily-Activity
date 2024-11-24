@@ -104,3 +104,10 @@ New  Ameyo server
 https://newameyo1.mpokket.org:8433/app
 192.168.215.61
 
+
+All PDF  delete command
+---------------------------
+
+find . -type f -name "*.pdf" -exec rm -f {} \;
+
+
