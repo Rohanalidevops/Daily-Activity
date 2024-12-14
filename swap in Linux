@@ -1,0 +1,15 @@
+swapon --show
+free -h
+
+sudo swapoff /swapfile     sudo dd if=/dev/zero of=/swapfile bs=1G count=4
+   sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+
+for permanent save:
+step-1
+sudo nano /etc/fstab
+
+ step-02
+/swapfile none swap sw 0 0
