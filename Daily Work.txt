@@ -110,4 +110,9 @@ All PDF  delete command
 
 find . -type f -name "*.pdf" -exec rm -f {} \;
 
+NDG portal
+-----------
+Email ID:skrohanali786@gmail.com
+Password:RohanAli@57862024
+
 
