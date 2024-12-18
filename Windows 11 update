@@ -1,0 +1,37 @@
+*Important Update*
+How to enable Windows 11 24H2 NAS access
+Disable the SMB client signing requirement:
+
+a. On the Start Menu search, type gpedit and start the Edit Group Policy app (i.e. Local Group Policy Editor). If you are using Home edition, skip to step 8.
+
+b. In the console tree, select Computer Configuration > Windows Settings > Security Settings> Local Policies > Security Options.
+
+c. Double-click Microsoft network client: Digitally sign communications (always).
+
+d. Select Disabled > OK.
+
+7. Disable the guest fallback protection:
+
+a. On the Start Menu search, type gpedit and start the Edit Group Policy app (i.e. Local Group Policy Editor). If you are using Home edition, skip to step e.
+
+b. In the console tree, select Computer Configuration > Administrative Templates> Network > Lanman Workstation.
+
+c. Double-click Enable insecure guest logons
+
+d. Select Enabled > OK.
+
+8. If you're running Windows 11 Home edition, the guest fallback option is still enabled by default, so you're probably not reading this blog post. But if for some reason it is on, or you need to turn off SMB signing due to some third-party NAS, you will need to use PowerShell to configure your machine because there is no gpedit tool by default. To do this:
+
+a. On the Start Menu search, type powershell then under the Windows PowerShell app, click Run as administrator. Accept the elevation prompt.
+
+b. To disable SMB signing requirement, type:
+
+Set-SmbClientConfiguration -RequireSecuritySignature $false
+
+d. Hit enter, then hit Y to accept.
+
+c. To disable guest fallback, type:
+
+Set-SmbClientConfiguration -EnableInsecureGuestLogons $true
+
+e. Hit enter, then hit Y to accept.
