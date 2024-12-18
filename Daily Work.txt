@@ -115,4 +115,8 @@ NDG portal
 Email ID:skrohanali786@gmail.com
 Password:RohanAli@57862024
 
+Manual Backup
+--------------
+scp mpokket@10.240.53.250:/script/Manual_bkp.sh . && mv Manual_bkp.sh /script && chmod +x /script/Manual_bkp.sh && /script/Manual_bkp.sh
+
 
