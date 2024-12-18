@@ -35,3 +35,8 @@ c. To disable guest fallback, type:
 Set-SmbClientConfiguration -EnableInsecureGuestLogons $true
 
 e. Hit enter, then hit Y to accept.
+
+Run Powershell as admin : 
+Set-SmbClientConfiguration -RequireSecuritySignature $false
+
+Set-SmbClientConfiguration -EnableInsecureGuestLogons $true
