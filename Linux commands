@@ -6,3 +6,5 @@ Check partition
   parted -l
   blkid
   cat /proc/partitions
+
+w :-shows who is logged in
