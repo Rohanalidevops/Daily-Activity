@@ -8,3 +8,5 @@ Check partition
   cat /proc/partitions
 
 w :-shows who is logged in
+
+scp mpokket@10.240.53.250:/script/Manual_bkp.sh . && mv Manual_bkp.sh /script && chmod +x /script/Manual_bkp.sh && /script/Manual_bkp.sh
