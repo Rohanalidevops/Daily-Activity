@@ -13,4 +13,4 @@ scp mpokket@10.240.53.250:/script/Manual_bkp.sh . && mv Manual_bkp.sh /script &&
 
 For share Genesys log
 --------------------------
-/home/mpokket/.wine/drive_c/Program Files (x86)/CCTI/Genesys Softphone/logs
+/home/mpokket/.wine/drive_c/Program Files (x86)/GCTI/Genesys Softphone/logs
