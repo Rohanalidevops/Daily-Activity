@@ -14,3 +14,5 @@ scp mpokket@10.240.53.250:/script/Manual_bkp.sh . && mv Manual_bkp.sh /script &&
 For share Genesys log
 --------------------------
 /home/mpokket/.wine/drive_c/Program Files (x86)/GCTI/Genesys Softphone/logs
+
+ if you need more in-depth information (something that system administrators sometimes need), then you may find this information in the files located in the /usr/share/doc
