@@ -16,3 +16,12 @@ For share Genesys log
 /home/mpokket/.wine/drive_c/Program Files (x86)/GCTI/Genesys Softphone/logs
 
  if you need more in-depth information (something that system administrators sometimes need), then you may find this information in the files located in the /usr/share/doc
+
+For finding memory full details including serials number
+--------------------------------------------------------------
+sudo dmidecode -t memory
+
+
+this is for check ssh /hdd serial no, which have connected in the system
+--------------------------------------------------------------------------
+lsblk -d -o NAME,SERIAL  
