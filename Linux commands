@@ -25,3 +25,7 @@ sudo dmidecode -t memory
 this is for check ssh /hdd serial no, which have connected in the system
 --------------------------------------------------------------------------
 lsblk -d -o NAME,SERIAL  
+
+Use for keyboard not working
+-------------------------------------
+systemctl status lightdm
