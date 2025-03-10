@@ -42,5 +42,9 @@ https://linuxjourney.com/ :- linux administrator journey
 
 quickupdate service in loop
 ----------------------------
-for i in {1..3}; do systemctl status quickupdate | systemctl restart quickupdate | systemctl enable quickupdate && systemctl status quickupdate; done					
+for i in {1..3}; do systemctl status quickupdate | systemctl restart quickupdate | systemctl enable quickupdate && systemctl status quickupdate; done		
+
+This is useful when checking hardware identity for tracking, security, or automation in IT asset management.
+----------------------------------------------------------------------------------------------------------------
+udevadm info --query=all --name=/dev/sda | grep ID_SERIAL
 
