@@ -48,3 +48,12 @@ This is useful when checking hardware identity for tracking, security, or automa
 ----------------------------------------------------------------------------------------------------------------
 udevadm info --query=all --name=/dev/sda | grep ID_SERIAL
 
+
+kill -9 <process_id>
+is used in Linux to forcefully terminate a process. Let's break down the command for better understanding:
+
+Command Breakdown
+kill: This command sends signals to processes to control their behavior (stop, terminate, or continue).
+-9: This is the signal number corresponding to SIGKILL (Signal 9), which forcefully kills the process.
+<process_id>: This is the PID (Process ID) of the process you want to terminate.
+
